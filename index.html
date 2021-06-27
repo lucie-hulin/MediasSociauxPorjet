@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Insta SPY</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" />
+    <link href="templatemo-style.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/afd6aa68df.js" crossorigin="anonymous"></script>
+    <script src="search.js"></script>
+    <!--<script src="accueil.js"></script>-->
+</head>
+<body>
+
+
+<div class="container">
+    <!-- Top box -->
+    <!-- Logo & Site Name -->
+    <div class="placeholder">
+        <div class="parallax-window" data-parallax="scroll" data-image-src="banniere.jpeg">
+            <div class="tm-header">
+                <div class="row tm-header-inner">
+                    <div class="col-md-6 col-12">
+                        <img src="logo.png" alt="Logo" class="tm-site-logo" />
+                        <div class="tm-site-text-box">
+                            <h2>Bienvenue sur la page dashboard : connectez vous !</output></h2>
+                            <h6 class="tm-site-description">Toutes vos données Instagram en condensées</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <header class="row tm-welcome-section">
+            <h2 class="col-12 text-center tm-section-title">Mettez votre token :</output> </h2>
+            <form class="col-12 text-center tm-section-title">
+                <input type="text" id="token"  value="" size="30" required><br>
+                <input type="button" id="bouton" value="Se connecter" size="30" onclick="connecter()"><br><br>
+            </form>
+        </header>
+    </main>
+
+    <footer class="tm-footer text-center">
+        <img src="data:image/png;base64,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">
+        <p>Copyright &copy; Lucie Hulin
+            | Projet médias sociaux</a></p>
+    </footer>
+</div>
+</body>
+</html>
