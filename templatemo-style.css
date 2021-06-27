@@ -9,9 +9,26 @@
         box-sizing:border-box;
     }
 
-ul, nav, body, h1, h2, h4, h6, p, figure {
+ul, nav, body, h1, h2, h4, h6, figure {
     margin: 0;
     padding: 0;
+}
+
+img{
+    width : 250px;
+    height : 250px;
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+p{
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 a, button { transition: all 0.3s ease; }
